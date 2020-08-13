@@ -41,10 +41,15 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
+
 	console.log(message.content);
+	
   if (message.content === '!ping') {
+  
     message.channel.send('Pong.');
+    
   }
+  
 });
 
 client.login('your-token-goes-here');
